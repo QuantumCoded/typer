@@ -29,7 +29,7 @@ fn main() -> main_error::MainResult {
     terminal.show_cursor()?;
 
     // TODO: figure out how to clear the terminal here
-
+    print! ("\x1B[2J\x1B[1;1H"); // come on jeffrey
     println!("Score: {:.0}%", score);
 
     Ok(())
